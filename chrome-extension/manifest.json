@@ -1,0 +1,16 @@
+{
+	"name": "Code Formatter",
+	"version": "0.0",
+	"manifest_version": 3,
+	"description": "Prettifies Code",
+	"homepage_url": "https://github.com/doleckijakub/code-formatter-extension",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["parser.js"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": ["storage"],
+	"host_permissions": ["*://*/*", "<all_urls>"]
+}
